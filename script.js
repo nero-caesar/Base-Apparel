@@ -11,7 +11,6 @@ document.querySelector('form').addEventListener('submit', function(event){
     if(emailpattern.test(emailinput)){
         emailerror.style.display = 'none'
         emailerrors.style.display = 'none'
-        alert('Valid Email');
         window.location.href = 'style.css'
     }
     else{

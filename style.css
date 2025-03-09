@@ -17,7 +17,6 @@
 
 body{
     display: flex;
-    gap: 0px;
 }
 h1{
     font-family: 'josefin1';
@@ -40,6 +39,9 @@ span{
     position: relative;
     left: 300px;
     top: -38px;
+}
+.section3{
+    display: none;
 }
 
 .section1{
@@ -106,4 +108,52 @@ button:hover{
     background-image: url(images/hero-desktop.jpg);
     width: 55%;
 
+}
+
+
+@media screen and (max-width : 376px) {
+    body{
+        flex-direction: column;
+        gap: 80px;
+    }
+    #img{
+        left: 220px;
+    }
+    h1{
+        text-align: center;
+    }
+    .section1 p{
+        text-align: center;
+        width: 350px;
+    }
+    .section1{
+        padding: 0px;
+    }
+    .section1-text{
+        align-items: center;
+        margin-left: 190px;
+    }
+    .section1-img{
+        display: none;
+    }
+    input{
+        width: 280px;
+    }
+    button{
+        width: 70px;
+    }
+    .section3{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 50px;
+    }
+    .sec3-img{
+        display: flex;
+        width: 150px;
+        padding-left: 40px;
+    }
+    .section2{
+        display: none;
+    }
 }
